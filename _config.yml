@@ -1,0 +1,167 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Carpentries Italia
+email: carpentriesitalia@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "carpentriesitalia.github.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username:
+github_username: carpentriesitalia
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+remote_theme: daviddarnes/alembic@main
+# theme: alembic
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# 3. Gem settings
+# paginate: 2 # jekyll-paginate > items per page
+# paginate_path: blog/page:num # jekyll-paginate > blog page
+jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
+# twitter:
+  # username: DavidDarnes # jekyll-seo-tag > Owners twitter username
+author: CarpentriesItalia # jekyll-seo-tag > default author
+social: # jekyll-seo-tag > social overrides
+  name: David Darnes # jekyll-seo-tag > real name
+  links:  # jekyll-seo-tag > social aliases (sameAs)
+    # - https://twitter.com/DavidDarnes
+    # - https://www.facebook.com/daviddarnes
+    # - https://www.linkedin.com/in/daviddarnes
+    - https://github.com/CarpentriesItalia
+# markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
+# commonmark:
+  # options: ["SMART", "FOOTNOTES"]
+  # extensions: ["strikethrough", "autolink", "table"]
+
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: Europe/London # Timezone for blog posts and alike
+
+# 5. Collections
+collections:
+  posts:
+    title: Posts # Needed for Siteleaf
+    output: true
+    description: "My thoughts and ideas" # The post list page content
+    feature_text: |
+      Welcome to the blog
+    feature_image: "https://picsum.photos/2560/600?image=866"
+
+# 6. Jekyll collections settings
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "/assets/default-social-image.png" # Default image for sharing
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post # Set the default layout for posts
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page # Set the default layout for pages
+
+# 7. Site settings
+encoding: utf-8 # Make sure the encoding is right
+lang: it-IT # Set the site language
+title: "Carpentries Italia" # Site name or title, also used in jekyll-seo-tag
+logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+description: "" # Site description and default description, also used in jekyll-seo-tag
+url: "https://carpentriesitalia.github.io" # Site url, also used in jekyll-seo-tag
+baseurl: ""
+repo: "https://github.com/carpentriesitalia/carpentriesitalia.github.io"
+email: "carpentriesitalia@gmail.com"
+# disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
+# google_analytics: ''
+# google_analytics_anonymize_ip: ''
+# service_worker: false # Will turn off the service worker if set to false
+css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+
+# 8. Site favicons & manifest icons
+favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
+  16: '/assets/logos/logo@16px.png'
+  32: '/assets/logos/logo@32px.png'
+  96: '/assets/logos/logo@96px.png'
+  120: '/assets/logos/logo@120px.png'
+  144: '/assets/logos/logo@144px.png'
+  180: '/assets/logos/logo@180px.png'
+  512: '/assets/logos/logo@512px.png'
+  1024: '/assets/logos/logo@1024px.png'
+
+# 9. Site navigation
+navigation_header:
+- title: Home
+  url: /
+- title: About
+  url: /about/
+- title: Laboratori
+  url: /workshops/
+- title: Modifica pagina
+  url: https://github.com/CarpentriesItalia/carpentriesitalia.github.io
+
+navigation_footer:
+- title: Theme by David Darnes
+  url: https://darn.es
+
+social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
+  # Twitter: https://twitter.com/DavidDarnes
+  # LinkedIn: https://www.linkedin.com/in/daviddarnes
+  GitHub: https://github.com/CarpentriesItalia
+  # link: https://darn.es
+  # RSS: /feed.xml
+
+sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
+  # Twitter: "#0d94e7"
+  # facebook: "#3B5998"
+  Email: true
