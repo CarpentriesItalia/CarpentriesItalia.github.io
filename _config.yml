@@ -33,6 +33,7 @@ github_username: carpentriesitalia
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-seo-tag
 remote_theme: daviddarnes/alembic@main
 # theme: alembic
 
