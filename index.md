@@ -19,7 +19,7 @@ In concreto, la nostra attività principale consiste nell'organizzare **laborato
 ## Laboratori
 {% include workshops_list.md %}
 
-## Contatto
+## Scrivici
 Vuoi collaborare, richiedere un laboratorio o saperne di più? Faccelo sapere tramite il modulo qui sotto.
 
 <form
@@ -27,13 +27,13 @@ Vuoi collaborare, richiedere un laboratorio o saperne di più? Faccelo sapere tr
   method="POST"
 >
   <label>
-    Your email:
+    Il tuo indirizzo email:
     <input type="email" name="_replyto">
   </label>
   <label>
-    Your message:
+    Messaggio:
     <textarea name="message"></textarea>
   </label>
   <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+  <button type="submit">Invia</button>
 </form>
