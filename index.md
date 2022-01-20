@@ -18,3 +18,22 @@ In concreto, la nostra attività principale consiste nell'organizzare **laborato
 
 ## Laboratori
 {% include workshops_list.md %}
+
+## Contatto
+Vuoi collaborare, richiedere un laboratorio o saperne di più? Faccelo sapere tramite il modulo qui sotto.
+
+<form
+  action="https://formspree.io/f/xnqwjgwn"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
